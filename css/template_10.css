@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 74px;
+    z-index: 1;
+    background-color: white;
+}
+
+.nav-content {
+    position: relative;
+    width: 34%;
+    height: 100%;
+    margin: auto 1%;
+}
+
+.navbar .main {
+    width: 45%;
+}
+
+.logo {
+    filter: invert(100%);
+}
+
+.navbar .nav-content ul {
+    position: relative;
+    width: 100%;
+}
+
+.navbar .nav-content ul li {
+    position: inherit;
+    list-style: none;
+    width: 100%;
+}
+
+.navbar .nav-content ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: 0.75s;
+    box-sizing: border-box;
+}
+
+.navbar .nav-content ul li a:hover {
+    color: #F76E11;
+    transform: scale(1.01);
+}
+
+.nav-icns {
+    width: 32px;
+    height: 32px;
+    margin: auto 5%;
+    padding: 1px 1px;
+}
+
+#home {
+    position: relative;
+    width: 98%;
+    height: 1000px;
+    margin: auto 1%;
+}
+
+#home .root {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+#home .main {
+    background-color: #EEEDDE;
+}
+
+#home .root .images {
+    width: 600px;
+    height: 700px;
+}
+
+#home .root .content {
+    position: inherit;
+    width: 100%;
+    height: 20%;
+    margin-top: -16%;
+    padding: 2%;
+}
+
+#home .root .content .badge {
+    position: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 42px;
+    border-radius: 50px;
+    background-color: black;
+    margin: auto 2%;
+}
+
+#home .root .content .badge p {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#home .root .bg-content {
+    height: 40%;
+    margin-top: -18%;
+}
+
+#home .root .content div {
+    position: relative;
+    width: 100%;
+    margin: 1% auto;
+}
+
+#home .root .content div .h-primary {
+    font-size: 75px;
+    font-weight: bolder;
+    margin: 2% auto;
+    padding: 2%;
+}
+
+#home .root .content div p {
+    font-size: 35px;
+    font-weight: bolder;
+    color: gray;
+    margin: 5% auto;
+    text-align: left;
+    padding: 2%;
+}
+
+#products {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#products .container {
+    position: relative;
+    width: 33%;
+    height: 380px;
+    margin: auto 1%;
+}
+
+#products #product1::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/table_succulent_plant.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+#products #product1 {
+    position: inherit;
+}
+
+#products .container div {
+    position: inherit;
+    width: 100%;
+    margin: 7% auto;
+}
+
+#products .container div .badge {
+    width: 45%;
+    height: 35px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+#products .container div .badge p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+}
+
+#products .container div .h-primary {
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#products .container div p {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#products #product2::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/minimalistic_chair.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+#products #product2 {
+    position: inherit;
+}
+
+#products #product3::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/picture_frame.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+#products #product3 {
+    position: inherit;
+    transition: 0.75s;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+#products #product3:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px 2px #EFEFEF;
+}
+
+#products #product2 {
+    position: inherit;
+    transition: 0.75s;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+#products #product2:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px 2px #EFEFEF;
+}
+
+#products #product1 {
+    position: inherit;
+    transition: 0.75s;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+#products #product1:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px 2px #EFEFEF;
+}
+
+#brands {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+#brands div {
+    width: 25%;
+    height: 100%;
+}
+
+#offers {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-color: #d9d7f14b;
+}
+
+#offers .container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+#offers .container .images {
+    position: relative;
+    width: 295px;
+    height: 604px;
+}
+
+#offers .container div {
+    position: relative;
+    width: 100%;
+    margin: auto 3%;
+}
+
+#offers .container div p {
+    font-size: 28px;
+}
+
+#offers .container div h1 {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#offers .container div button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 1%;
+    transition: 0.75s;
+    box-sizing: border-box;
+}
+
+#offers .container div button:hover,
+#offers .container div button:focus {
+    background-color: #F76E11;
+}
+
+#services {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#services .container {
+    position: relative;
+    width: 34%;
+    height: 350px;
+}
+
+#services .container div {
+    position: inherit;
+    width: 100%;
+    height: 25%;
+}
+
+#services .container div h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#services .container div p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    color: gray;
+    margin: auto 2%;
+}
+
+#inspiration {
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+#inspiration div {
+    position: inherit;
+    width: 100%;
+    height: 10%;
+}
+
+#inspiration .main {
+    position: inherit;
+    width: 100%;
+    height: 87%;
+    margin: 3% auto;
+}
+
+#inspiration div h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#inspiration .main img {
+    position: inherit;
+    width: 1200px;
+    height: 600px;
+}
+
+#deals {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#deals div {
+    position: inherit;
+    width: 100%;
+    height: 10%;
+    margin: 2% auto;
+}
+
+#deals .main {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    margin: 2% auto;
+}
+
+#deals div h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#deals .main .container {
+    position: inherit;
+    width: 25%;
+    height: 300px;
+    margin: auto 5px;
+}
+
+#deals #product1::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/table_succulent_plant.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+#deals #product1 {
+    position: inherit;
+}
+
+#deals #product2::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/minimalistic_chair.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+#deals #product2 {
+    position: inherit;
+}
+
+#deals #product3::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/picture_frame.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+#deals #product3 {
+    position: inherit;
+    transition: 0.75s;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+#deals #product3:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 2px #EFEFEF;
+}
+
+#deals #product2 {
+    position: inherit;
+    transition: 0.75s;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+#deals #product2:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 2px #EFEFEF;
+}
+
+#deals #product1 {
+    position: inherit;
+    transition: 0.75s;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+#deals #product1:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 2px #EFEFEF;
+}
+
+#deals #product4::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/metallic_table_lamp.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+#deals #product4 {
+    position: inherit;
+    transition: 0.75s;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+#deals #product4:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 2px #EFEFEF;
+}
+
+#deals .main .container div {
+    width: 100%;
+    display: none;
+}
+
+#deals .main #product1:hover div {
+    display: flex;
+}
+
+#deals .main #product2:hover div {
+    display: flex;
+}
+
+#deals .main #product3:hover div {
+    display: flex;
+}
+
+#deals .main #product4:hover div {
+    display: flex;
+}
+
+#deals .main .container div h1 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 5% auto;
+}
+
+#deals .main .container div h4 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 5% auto;
+}
+
+#newsletter {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+#newsletter div {
+    position: relative;
+    width: 100%;
+    height: 35%;
+}
+
+#newsletter div h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#newsletter div div {
+    position: relative;
+    width: 50%;
+    height: 100px;
+}
+
+#newsletter div div input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#newsletter div div button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 1%;
+    transition: 0.75s;
+    margin: auto 2%;
+    box-sizing: border-box;
+}
+
+#newsletter div div button:hover,
+#newsletter div div button:focus {
+    background-color: #F76E11;
+}
+
+#newsletter div p {
+    font-size: 18px;
+    font-weight: bolder;
+    color: gray;
+    text-align: center;
+    margin: auto 2%;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+footer p {
+    font-size: 22px;
+    font-weight: bolder;
+    color: white;
+    margin: 1% auto;
+}

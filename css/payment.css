@@ -1,0 +1,133 @@
+#summary {
+    width: 100vw;
+    height: 45vh;
+    background-color: rgb(152, 236, 236);
+    box-sizing: border-box;
+}
+
+#summary div {
+    width: 50%;
+    height: 100%;
+}
+
+#summary .price {
+    width: 85%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.35rem;
+}
+
+.paras {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.03rem;
+}
+
+#summary .price div {
+    width: 100%;
+    height: auto;
+    margin: 5% auto;
+}
+
+select {
+    width: 35%;
+    height: 100%;
+    text-align-last: center;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid black;
+    font-size: 1.03rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: transparent;
+    width: 15%;
+    height: 10%;
+    font-size: 1.03rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    outline: none;
+    transition: 0.75s;
+}
+
+button:focus {
+    transform: scale(1.02);
+}
+
+#payment {
+    width: 100vw;
+    min-height: 55vh;
+    height: auto;
+}
+
+#payment .paras {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.03rem;
+}
+
+#payment details {
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+#payment details summary {
+    width: 100%;
+    height: 25%;
+    list-style: none;
+    background-color: #231955;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.04rem;
+    font-weight: bolder;
+    padding-left: 2px;
+}
+
+#payment details .container {
+    width: 100%;
+    height: 75%;
+}
+
+#payment details .container form {
+    width: 100%;
+    height: 100%;
+}
+
+#payment details .container form div {
+    width: 100%;
+    height: 20%;
+    min-height: 10%;
+    margin: 1% auto;
+}
+
+#payment details .container form div input {
+    width: 35%;
+    height: 25px;
+    border: none;
+    outline: none;
+    text-transform:uppercase;
+    border-bottom: 1px solid #231955;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.03rem;
+}
+
+#payment details .container form div .card-inps {
+    width: 15%;
+    margin: auto 1%;
+    text-align: center;
+}
+
+#payment details .container form div input[type='submit'] {
+    border: 1px solid #231955;
+    height: 30px;
+    width: 15%;
+    transition: 0.75s;
+}
+
+#payment details .container form div input[type='submit']:focus{
+    background-color: #231955;
+    color: white;
+}

@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif',serif;
+}
+
+.align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-ver{
+    flex-direction: column;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 74px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px #FAFAFA;
+    z-index: 1;
+}
+
+.nav-brand{
+    width: 40%;
+    height: 68px;
+    margin: 0px 5px;
+}
+
+.nav-brand p{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.nav-content{
+    width: 60%;
+    height: 68px;
+}
+
+.nav-content ul{
+    list-style: none;
+    margin-left: 65px;
+}
+
+.nav-content ul li{
+    margin: 2px 15px;
+}
+
+.nav-content ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-content ul li a img{
+    margin: 2px 15px;
+    width: 32px;
+    height: 32px;
+}
+
+#home::before{
+    position:absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/workout.jpg');
+    background-position:cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#home{
+    position: relative;
+    width: 100%;
+    height: 528px;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.home-container{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: 2px 5px;
+}
+
+.home-container .h-primary{
+    width: 50%;
+    font-size: 68px;
+    font-weight: bolder;
+    color: white;
+}
+
+.home-container p{
+    font-size: 25px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.home-container .h-tertiary{
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    margin: 20px 0px;
+}
+
+.home-container .btn{
+    width: 300px;
+    height: 74px;
+    background-color: #FF4C29;
+    color: white;
+    margin: 20px 0px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: 0.75s;
+    box-sizing: border-box;
+}
+
+.home-container .btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 2px #FAFAFA;
+}
+
+.content{
+    background-image: linear-gradient(#1c0c5b50,#1c0c5b70,#1c0c5bb2,#1c0c5bd2,#1C0C5B);
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 2%;
+}
+
+.bar{
+    position: relative;
+    width: 100%;
+    height: 5px;
+}
+
+.left-bar{
+    width: 20%;
+    height: 5px;
+}
+
+.right-bar{
+    width: 30%;
+    height: 5px;
+    background-color: #FF4C29;
+    margin-left: 52%;
+}
+
+#assesment{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    align-items: baseline;
+    background-color: #FAFAFA;
+}
+
+#assesment .left{
+    width: 300px;
+    height: 150px;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin: 20px 20px;
+    border-radius: 20px;
+}
+
+#assesment .left .h-primary{
+    font-size: 68px;
+    font-weight: bolder;
+    color: white;
+    font-style: italic;
+}
+
+#assesment .container{
+    width: 99%;
+    height: 427px;
+}
+
+#assesment .active{
+    font-weight: bolder;
+}
+
+#assesment .container p{
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+#assesment .con-container{
+    width: 30%;
+    height: 420px;
+    margin: 2px 21px;
+}
+
+#assesment .btn{
+    width: 350px;
+    height: 54px;
+    background-color: white;
+    border: 2px solid #FAFAFA;
+    outline: none;
+    box-shadow: 0px 0px 10px 2px gray;
+    box-sizing: border-box;
+    margin-left: 68%;
+    border-radius: 50px;
+    transition: 0.75s;
+}
+
+#assesment .btn p{
+    font-size: 20px;
+    color: #FF4C29;
+    background-color: transparent;
+    transition: 0.75s;
+}
+
+#assesment .btn:hover{
+    transform: scale(1.05);
+    font-style: italic;
+    cursor: pointer;
+}
+
+#assesment .btn:hover p{
+    transform: translateX(5px);
+    color: blue;
+}
+
+#assesment .btn:focus{
+    transform: scale(1.05);
+    font-style: italic;
+    cursor: pointer;
+}
+
+#assesment .btn:focus p{
+    transform: translateX(-5px);
+    color: blue;
+}
+
+#shape{
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+
+#shape .container::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/personal_trainer_3.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-top-left-radius: 40%;
+}
+
+#shape .container{
+    position: relative;
+    width: 48%;
+    height: 600px;
+    margin: 0px 5px;
+    border-top-left-radius: 40%;
+    box-shadow: 0px 0px 10px 2px #1c0c5b7e;
+}
+
+#shape .active::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/personal_trainer_2.jpg');
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 40%;
+}
+
+#shape .active{
+    position: relative;
+    margin-top: 100px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 40%;
+    background-color: rgba(255, 255, 255, 0.871);
+    transition: 0.75s;
+    box-shadow: 0px 0px 10px 2px #FAFAFA;
+}
+
+#shape .active:hover{
+    background-color: transparent;
+}
+
+#shape .h-secondary{
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#banners{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: #FAFAFA;
+}
+
+#banners .container{
+    width: 30%;
+    height: 500px;
+    margin: 2px 20px;
+}
+
+#banners .active{
+    margin-top: 150px;
+}
+
+#banners .h-tertiary{
+    width: 60%;
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#banners .h-secondary{
+    width: 60%;
+    font-size: 45px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#banners p{
+    font-size: 18px;
+    color: gray;
+    text-align: center;
+}
+
+#offers{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: #FF4C29;
+}
+
+#offers .container{
+    width: 32%;
+    height: 800px;
+    margin: auto auto auto 2%;
+}
+
+#offers .active::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/personal_trainer.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 80%;
+}
+
+#offers .active{
+    position: relative;
+    width: 68%;
+    height: 800px;
+    border-top-left-radius: 80%;
+}
+
+#offers .h-primary{
+    font-size: 45px;
+    font-weight: bolder;
+    font-style: italic;
+    width: 60%;
+    color: white;
+    margin-top: 20%;
+}
+
+#offers ul{
+    margin: 20% auto;
+}
+
+#offers ul li{
+    margin: 10% auto;
+    font-size: 18px;
+    color: white;
+}
+
+#offers .btn{
+    width: 250px;
+    height: 74px;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: #FF4C29;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    border-radius: 50px;
+    transition: 0.75s;
+    box-sizing: border-box;
+}
+
+#offers .btn:hover{
+    transform: scale(1.04);
+    width: 264px;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Portal</title>
+
+    <link rel="stylesheet" href="../css/alignment.css">
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+
+<body>
+
+    <section class="align" id="summary">
+        <div class="align align-ver">
+            <h1>INR 5</h1>
+            <p class="paras">To be paid</p>
+        </div>
+
+        <div class="align align-ver price">
+
+            <div class="align-sec">
+                <label for="mode" class="paras">Select the mode of payment : </label>
+                <select name="mode" id="mode">
+                    <option value="NA">Select an option</option>
+                    <option value="DC">Debit Card</option>
+                </select>
+            </div>
+
+            <button type="button" id="button1">Proceed</button>
+        </div>
+
+    </section>
+
+    <section class="align-def-2 align-ver" id="payment">
+
+        <details class="align-def-2">
+
+            <summary>DEBIT CARD</summary>
+
+            <div class="container align align-ver">
+
+                <form action="http://localhost:8083/payment/process" class="align-def-2 align-ver">
+
+                    <div class="align">
+                        <input type="text" placeholder="CARD NUMBER" name="cnum" id="cnum" required>
+                    </div>
+
+                    <div class="align">
+                        <input type="text" placeholder="CARD HOLDER NAME" name="cname" id="cname" required>
+                    </div>
+
+                    <div class="align">
+                        <input type="text" class="card-inps" placeholder="CARD Expiry" name="expiry" id="expiry"
+                            required>
+                        <input type="text" class="card-inps" placeholder="CARD CVV" name="cvv" id="cvv" required>
+                    </div>
+
+                    <div class="align">
+                        <input type="submit" value="Pay Now">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </details>
+
+    </section>
+
+
+    <script src="../js/payment.js"></script>
+    
+</body>
+
+</html>

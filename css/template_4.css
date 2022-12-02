@@ -1,0 +1,356 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Bree Serif',serif;
+}
+
+.align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-ver{
+    flex-direction: column;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    z-index: 1;
+}
+
+.brand{
+    width: 30%;
+    height: 100px;
+    margin: auto 8% auto 2%;
+}
+
+.nav-content{
+    width: 60%;
+    height: 100px;
+}
+
+.navbar ul{
+    width: 100%;
+    padding-left: 6%;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: auto 25px;
+}
+
+
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    outline: none;
+}
+
+.navbar .btn{
+    width: 128px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #50CB93;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 4%;
+    transition: 1s;
+}
+
+.navbar .btn:focus{
+    background-color: black;
+}
+
+
+#home{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+.container{
+    width: 49%;
+    height: 700px;
+    margin: auto 1%;
+    text-align: center;
+}
+
+.h-primary{
+    text-align: center;
+    font-size: 65px;
+    font-weight: bolder;
+    color: black;
+}
+
+.h-secondary{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    color: black;
+}
+
+.light-heading{
+    color: gainsboro;
+}
+
+#home .btn{
+    width: 250px;
+    height: 70px;
+    border: none;
+    outline: none;
+    background-color: #50CB93;
+    color: white;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin: 4% auto;
+    transition: 1s;
+}
+
+#home .btn:focus{
+    background-color: black;
+}
+
+
+.m-container{
+    height: 1000px;
+}
+
+
+#features{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#features .paras{
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    margin: 7% auto;
+}
+
+#customers{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#customers .container{
+    width: 33%;
+    height: 420px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: auto 1%;
+}
+
+#customers .imgs{
+    border-radius: 50%;
+}
+
+.paras{
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#plants{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+#plants .paras{
+    margin: 2% auto;
+    line-height: 40px;
+}
+
+
+#planner{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+#planner .paras{
+    width: 50%;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 4% auto;
+    line-height: 40px;
+}
+
+#pricing::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url('../images/bonsai.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+
+#pricing{
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+
+#pricing .container{
+    width: 33%;
+    height: 700px;
+    margin: auto 1%;
+}
+
+.def-container{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.h-tertiary{
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#pricing .btn{
+    width: 250px;
+    height: 65px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: #50CB93;
+    font-size: 25px;
+    text-align: center;
+    transition: 1s;
+    margin: 5% auto;
+}
+
+#pricing .btn:focus{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+#pricing .paras{
+    text-align: center;
+    font-size: 25px;
+    margin: 2% auto;
+}
+
+.price-tag{
+    font-size: 75px;
+    color: #50CB93;
+}
+
+#pricing .sp-btn{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+#pricing .sp-btn:focus{
+    background-color: #50CB93;
+    color: white;
+}
+
+#pricing .sp-container{
+    color: white;
+}
+
+.sp-heading{
+    color: white;
+}
+
+#contact{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #50CB93;
+    color: white;
+}
+
+#contact .btn{
+    width: 250px;
+    height: 65px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: #50CB93;
+    font-size: 25px;
+    text-align: center;
+    transition: 1s;
+    margin: 5% auto;
+}
+
+#contact .btn:focus{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+#contact .sp-btn{
+    width: 350px;
+    height: 80px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+
+#others{
+    position: relative;
+    width: 100%;
+    height: 410px;
+}
+
+#others .container{
+    width: 24%;
+    height: 410px;
+    margin: auto 1%;
+}
+
+#others span{
+    color: #50CB93;
+}
+
+#others .paras{
+    font-size: 18px;
+    margin: 4% auto;
+    word-spacing: 10px;
+}
+
+.icn-container{
+    width: 100%;
+    height: 50px;
+}
+
+.ico{
+    width: 32px;
+    height: 32px;
+    margin: auto 4%;
+}
+
+#others .sp-para{
+    font-size: 25px;
+}

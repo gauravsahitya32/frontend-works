@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+#navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 74px;
+    background-color: #26001B;
+    z-index: 2;
+}
+
+#navbar .nav-area{
+    position: inherit;
+    width: 25%;
+    height: 100%;
+    background-color: red;
+}
+
+#navbar .nav-content ul li a{
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    transition: 0.75s color;
+}
+
+#navbar .nav-content ul li a:hover{
+    color: red;
+}
+
+
+#navbar .nav-area p{
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+#home{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#home .container{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-color: #26001B;
+}
+
+#home .main::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('../images/barber_home.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+}
+
+#home .main{
+    position: relative;
+    width: 55%;
+    height: 100%;
+}
+
+#home .container div{
+    position: inherit;
+    width: 100%;
+    margin: 1% auto;
+}
+
+#home .container div img{
+    margin: 1% 20%;
+}
+
+#home .container div h1{
+    font-size: 55px;
+    font-weight: bolder;
+    color: white;
+    margin: 1% 20%;
+}
+
+#home .container div p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    margin: 1% 20%;
+}
+
+#home .container div button{
+    width: 250px;
+    height: 74px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    margin: 2% 20%;
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    transition: 0.55s;
+}
+
+#home .container div button:hover, #home .container div button:focus{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+
+#story{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#story .container{
+    position: inherit;
+    width: 35%;
+    height: 90%;
+    margin: 2% auto;
+}
+
+#story .main::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('../images/barber_story.webp');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#story .main{
+    width: 25%;
+}
+
+#story .container div{
+    position: inherit;
+    width: 100%;
+    height: 25%;
+}
+
+
+#story .container div div{
+    position: inherit;
+    width: 20%;
+    height: 100%;
+}
+
+#story .container div h1{
+    font-size: 55px;
+    font-weight: bolder;
+    margin: auto 5%;
+}
+
+#story .container div p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10% 5%;
+}
+
+#story .container div button{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 20% 5%;
+    width: 150px;
+    height: 50px;
+    border: 2px solid red;
+    outline: none;
+    color: red;
+    background-color: white;
+    padding: 5px;
+    transition: 0.55s;
+}
+
+#story .container div button:hover, #story .container div button:focus{
+    background-color: red;
+    color: white;
+}
+
+#story .container div .content{
+    width: 80%;
+}
+
+#story .container div .content p{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+
+#price{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#price .container{
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+
+#price .main{
+    width: 55%;
+}
+
+#price .container div{
+    position: inherit;
+    width: 100%;
+    height: 50%;
+}
+
+#price .container div div{
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+}
+
+#price .container div div img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+
+#price .container div h1{
+    font-size: 55px;
+    font-weight: bolder;
+    margin: auto 5%;
+}
+
+#price .container div .align-sec{
+    position: inherit;
+    width: 100%;
+}
+
+#price .container div .align-sec div{
+    width: 50%;
+    padding-left: 5%;
+}
+
+#price .container div .align-sec div p{
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+#price .container div .align-sec div p span{
+    color: red;
+}
+
+#services::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('../images/barber_bg.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#services{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#services .container{
+    position: inherit;
+    width: 34%;
+    height: 80%;
+    margin: 5% 1%;
+    background-color: #26001B;
+    border-radius: 10px;
+    transition: 0.55s;
+    box-sizing: border-box;
+}
+
+#services .container:hover{
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 2px #26001B;
+}
+
+#services .container:hover div h1, #services .container:hover div p{
+    color: red;
+}
+
+
+#services .container div{
+    position: inherit;
+    width: 100%;
+    margin: 2% auto;
+}
+
+#services .container div h1{
+    position: inherit;
+    font-size: 45px;
+    color: white;
+    margin: 2% auto;
+}
+
+#services .container div p{
+    position: inherit;
+    font-size: 20px;
+    color: white;
+    margin: 2% auto;
+    text-align: center;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #26001B;
+}
+
+footer p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+}

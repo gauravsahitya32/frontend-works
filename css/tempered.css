@@ -1,0 +1,58 @@
+#home{
+    width: 100vw;
+    height: 90vh;
+    box-sizing: border-box;
+    background-color: #BCCEF8;
+}
+
+#home div{
+    width: 75%;
+    height: 100%;
+}
+
+#home #brand{
+    width:25%
+}
+
+h1{
+    font-size: 3.35rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+    text-align: start;
+    margin: 1% auto;
+}
+
+.paras{
+    font-size: 1.35rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+#home div .btn-grp{
+    width: 100%;
+    height: auto;
+    margin: 1% auto;
+}
+
+button{
+    width: 17%;
+    height: 50px;
+    background-color: #425F57;
+    border: 1px solid #425F57;
+    font-size: 1.15rem;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    color: white;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+}
+
+.ft-para{
+    color: white;
+}

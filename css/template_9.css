@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Bree Serif', serif;
+}
+
+@keyframes change {
+    0% {
+        background-image: url('../images/railway.png');
+    }
+    25% {
+        background-image: url('../images/buildings.jpg');
+    }
+    50% {
+        background-image: url('../images/commercial.jpg');
+    }
+    75% {
+        background-image: url('/images/airports.jpg');
+    }
+    100% {
+        background-image: url('../images/bridges.jpg');
+    }
+}
+
+.sp-align {
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 74px;
+    background-color: transparent;
+}
+
+.nav-brand {
+    width: 40%;
+    height: 68px;
+    margin: 0px 5px;
+}
+
+.nav-brand p {
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+}
+
+.nav-content {
+    width: 60%;
+    height: 68px;
+}
+
+.nav-content ul {
+    list-style: none;
+    margin-left: 65px;
+}
+
+.nav-content ul li {
+    margin: 2px 15px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 19px;
+    color: whitesmoke;
+}
+
+.active {
+    color: yellow;
+}
+
+#home::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/railway.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.708);
+}
+
+#home .content {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#home .content p {
+    font-size: 35px;
+    text-align: center;
+    color: rgba(105, 104, 104, 0.708);
+    font-weight: bold;
+}
+
+#home .content h1 {
+    width: 100%;
+    font-size: 68px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+#exp {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#exp .content {
+    position: inherit;
+    width: 33%;
+    height: inherit;
+}
+
+#exp .content .con-content {
+    position: inherit;
+    width: 75%;
+    height: 300px;
+    background-color: #FFC900;
+    box-shadow: 0px 0px 10px 2px #F7F7F7;
+}
+
+#exp .content .con-content h1 {
+    font-size: 100px;
+    font-weight: bolder;
+    color: white;
+}
+
+#exp .content .con-content h2 {
+    margin-bottom: 5%;
+    font-size: 55px;
+    font-weight: bolder;
+    color: white;
+}
+
+#exp .content .con-content h3 {
+    margin-top: 2%;
+    font-size: 35px;
+    font-weight: normal;
+    color: white;
+}
+
+#exp .content div {
+    position: inherit;
+    width: 85%;
+    height: 100%;
+}
+
+#exp .content div p {
+    font-size: 55px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#exp .content div span p {
+    font-size: 55px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#exp .content p {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.paras {
+    color: rgba(0, 0, 0, 0.708);
+}
+
+#works {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#works .content {
+    position: inherit;
+    width: 50%;
+    height: 100%;
+}
+
+#works .imgs::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/railway.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+    animation-name: change;
+    animation-duration: 60s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#works .imgs {
+    position: inherit;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.608);
+}
+
+#works .content h1 {
+    font-size: 68px;
+    font-weight: lighter;
+}
+
+#works .content h2 {
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+#works .content p {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: justify;
+    margin: 3% 1%;
+}
+
+#works .content a {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #FFC900;
+    transition: 1s;
+    text-decoration: none;
+}
+
+#works .content a:hover {
+    transform: translateX(10px);
+}
+
+#profile::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/rail-bridge.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#profile {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+#profile .content {
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+
+#profile .content img {
+    filter: invert(100%);
+    margin: 1% auto;
+}
+
+#profile .content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 68px;
+    color: white;
+    font-weight: bolder;
+    margin: 3% auto 1% auto;
+}
+
+#profile .content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: #FFC900;
+    font-weight: normal;
+    margin: 1% auto;
+}
+
+#services {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: whitesmoke;
+}
+
+#services .content {
+    position: inherit;
+    width: 50%;
+    height: 100%;
+}
+
+#services .sp-content {
+    width: 65%;
+}
+
+#services .content .container {
+    position: relative;
+    width: 100%;
+    height: 34%;
+}
+
+#services .content .container .con-container {
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+
+#services .content .container .sp-con-container {
+    width: 98%;
+}
+
+#services .content .container .con-container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin: 2%;
+}
+
+#services .content .container .con-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 2%;
+    line-height: 30px;
+    text-align: justify;
+}
+
+#services .content .container .con-container img {
+    width: 64px;
+    height: 64px;
+}
+
+#services .content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin: 2%;
+    text-align: justify;
+}
+
+#services .content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 68px;
+    font-weight: bolder;
+    margin: 2%;
+    text-align: justify;
+}
+
+#services .content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 5% 2%;
+    line-height: 30px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.508);
+}
+
+#blogs {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+}
+
+#blogs .content {
+    position: inherit;
+    width: 50%;
+    height: 100%;
+}
+
+#blogs .sp-content {
+    width: 65%;
+}
+
+#blogs .content .container {
+    position: relative;
+    width: 100%;
+    height: 34%;
+    margin: 1% 1%;
+}
+
+#blogs .content .container .con-container {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+#blogs .content .container .sp-con-container {
+    width: 98%;
+}
+
+#blogs .content .container .sp-con-container p {
+    color: black;
+}
+
+#blogs .content .container .con-container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin: 2%;
+}
+
+#blogs .content .container .con-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 2%;
+    line-height: 30px;
+    text-align: justify;
+}
+
+#blogs .content .container .con-container img {
+    width: 64px;
+    height: 64px;
+}
+
+#blogs .content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin: 2%;
+    text-align: justify;
+}
+
+#blogs .content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 68px;
+    font-weight: bolder;
+    margin: 2%;
+    text-align: justify;
+}
+
+#blogs .content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 5% 2%;
+    line-height: 30px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.508);
+}
+
+#engineers {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#engineers .content {
+    position: inherit;
+    width: 33%;
+    height: 80%;
+    margin: auto 1%;
+}
+
+#engineers .content h2 {
+    font-size: 45px;
+    margin-left: -250px;
+}
+
+#engineers .content h1 {
+    font-size: 68px;
+    font-weight: bolder;
+}
+
+#engineers .content p {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 30px;
+    margin: 2% 1%;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.508);
+}
+
+#engineers #cust1::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('../images/env-customer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+#engineers #cust2::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('../images/env-customer-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+#engineers .content div {
+    position: inherit;
+    width: 75%;
+    height: 20%;
+    background-color: rgba(245, 245, 245, 0.397);
+    margin: 2% auto;
+    transition: 0.7s;
+}
+
+#engineers #cust1 {
+    background-color: rgba(0, 0, 0, 0.508);
+}
+
+#engineers #cust2 {
+    background-color: rgba(0, 0, 0, 0.508);
+}
+
+#cust1:hover div {
+    height: 50%;
+}
+
+#engineers #cust1:hover div p {
+    display: flex;
+}
+
+#cust2:hover div {
+    height: 50%;
+}
+
+#engineers #cust2:hover div p {
+    display: flex;
+}
+
+#engineers .content div h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#engineers .content div h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.408);
+}
+
+#engineers .content div p {
+    display: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.408);
+    line-height: 30px;
+    transition: 0.7s;
+}
+
+#newsletter {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #FFC900;
+}
+
+#newsletter h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 68px;
+    font-weight: bolder;
+    color: white;
+}
+
+#newsletter p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+    margin: 3% auto;
+}
+
+#newsletter div {
+    width: 100%;
+}
+
+#newsletter div input {
+    width: 350px;
+    height: 50px;
+    background-color: white;
+    border: 1.4px solid black;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: auto 2%;
+    text-align: center;
+}
+
+#newsletter .btn {
+    border: none;
+    width: 200px;
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+
+#newsletter .btn:focus {
+    border: 1.4px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px auto;
+}
+
+footer p img {
+    margin-bottom: -2.1px;
+    width: 16px;
+    height: 16px;
+}

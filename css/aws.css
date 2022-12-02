@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.resources {
+    width: 100vw;
+    height: 100vh;
+}
+
+.resources .imgs {
+    position: relative;
+    width: 100%;
+    height: 25%;
+}
+
+.resources .imgs div {
+    width: 25%;
+    height: 100%;
+    margin: 0% 1%;
+}
+
+.resources .imgs div img {
+    width: 100%;
+    height: 100%;
+}
