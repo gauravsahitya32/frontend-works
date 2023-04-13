@@ -1,0 +1,150 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5%; */
+    /* min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+img {
+    width: 32px;
+    height: 32px;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.wrap {
+    max-width: 1300px;
+    /* font-size: 45%; */
+    /* margin: 0 auto; */
+}
+
+.d-table {
+    display: table;
+}
+
+.row {
+    display: table-row;
+}
+
+.col {
+    display: table-cell;
+}
+
+.h-primary {
+    font-size: 40px;
+    margin: 1% auto;
+}
+
+.body-para {
+    font-size: 18px;
+}
+
+.footer-para {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header .row {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header .col {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.msg-body {
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+}
+
+.msg-body .row {
+    position: relative;
+    width: 100%;
+}
+
+.msg-body .col {
+    position: inherit;
+    width: 100%;
+}
+
+.signature {
+    /* width: 100vw; */
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+.signature .row {
+    position: relative;
+    width: 100%;
+}
+
+.signature .col {
+    position: inherit;
+    width: 100%;
+}
+
+.signature p {
+    font-weight: bolder;
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+}
+
+.footer .row {
+    width: 100%;
+}
+
+.footer .col {
+    width: 33%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer p {
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    html{
+        /* font-size: 45%; */
+    }
+
+    .wrap{
+        max-width: 720px;
+    }
+}
+
+@media (max-width:999px) {
+    html{
+        font-size: 59%;
+    }
+
+    .wrap{
+        max-width: 920px;
+    }
+}
